@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to Make Login and Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width" /> 
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+		<div class="form-box">
+			<div class="button-box"> 
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log in</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<a href="#"><span class="fab fa-facebook-f"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+				 <a href="#"><span class="fab fa-instagram"></span></a>
+				 <a href="#"><span class="fab fa-github"></span></a>
+			</div>
+			<form class="input-group" id="login">
+				<div class="input-field">
+					<input type="text" name="username" required autocomplete="off">
+					<span></span>
+					<label>Username</label>
+				</div>
+				<div class="input-field">
+					<input type="password" name="username" required>
+					<span></span>
+					<label>Password</label>
+				</div>
+				<div class="pass">
+					Forgot password?
+				</div>
+				<input type="submit" name="login" value="login">
+				<div class="signup_link">
+					Not a member? <a href="#">signup</a>
+				</div>
+			</form>
+			<form  class="input-group" id="register">
+				<div class="input-field">
+					<input type="text" name="username" required>
+					<span></span>
+					<label>Username</label>
+				</div>
+				<div class="input-field">
+					<input type="text" name="email" required>
+					<span></span>
+					<label>Email</label>
+				</div>
+				<div class="input-field">
+					<input type="password" name="username" required>
+					<span></span>
+					<label>Password</label>
+				</div>
+				<div class="pass">
+					<input type="checkbox"> I agree to the terms & conditions
+				</div>
+				<input type="submit" name="register" value="register">
+			</form>
+		</div>	
+<script>
+	var log= document.getElementById("login");
+	var reg= document.getElementById("register");
+	var button= document.getElementById("btn");
+	function register(){
+		log.style.left = "-400px";
+		reg.style.left = "50px";
+		button.style.left = "110px";
+
+	}
+	function login(){
+		log.style.left = "50px";
+		reg.style.left = "450px";
+		button.style.left = "0px";
+
+	}
+</script>
+</body>
+</html>

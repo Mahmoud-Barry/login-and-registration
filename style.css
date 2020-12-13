@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
-    background: linear-gradient(120deg, #df2525, #4359d8);
+    background-color: blueviolet;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -14,7 +14,8 @@ body{
     padding: 5px 30px;
     overflow: hidden;
     margin: 0 auto;
-    background: white;
+	background: white;
+	margin-top: 40px;
 }
 .button-box{
     width: 220px;
@@ -25,7 +26,7 @@ body{
 }
 .toggle-btn{
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 10px 25px;
     background: transparent;
     outline: none;
     border: 0;
